@@ -5,8 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Driwja | Frontend Developer</title>
+
+  <!-- Social preview: title + image only -->
   <meta property="og:title" content="Driwja's Profile Card" />
   <meta property="og:image" content="https://driwja31.github.io/profile/profile.png" />
+
   <style>
     body {
       margin: 0;
@@ -24,14 +27,15 @@
       backdrop-filter: blur(15px);
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
       padding: 40px 30px;
-      max-width: 350px;
+      max-width: 400px;
       text-align: center;
       border: 1px solid rgba(255, 255, 255, 0.2);
       transition: transform 0.5s ease, box-shadow 0.5s ease;
+      color: #fff;
     }
 
     .card:hover {
-      transform: translateY(-15px);
+      transform: translateY(-10px);
       box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
     }
 
@@ -40,7 +44,7 @@
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #ffffff70;
+      border: 4px solid rgba(255, 255, 255, 0.4);
       margin-bottom: 20px;
       transition: transform 0.5s ease;
     }
@@ -51,11 +55,20 @@
 
     h2 {
       margin: 0 0 10px;
+      font-size: 24px;
     }
 
     p {
-      margin: 0;
+      margin: 0 0 20px;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .description {
+      font-size: 14px;
       line-height: 1.5;
+      color: #f0f0f0;
+      text-align: justify;
     }
   </style>
 </head>
@@ -65,11 +78,10 @@
     <img src="profile.png" alt="Driwja" class="profile-img" />
     <h2>Driwja Gami</h2>
     <p>Frontend Developer | React Developer</p>
-    <div>Front-End Developer skilled in React.js,Redux, JavaScript, HTML, CSS, and
-      Bootstrap, Tailwind CSS,JQuery with a focus on building responsive, user-friendly
-      applications. Experienced in API integration, performance optimization, and
-      interactive UI development. Passionate about modern web technologies and
-      problem-solving, seeking to deliver scalable, high-quality solutions.</div>
+    <div class="description">
+      Front-End Developer skilled in React.js, Redux, JavaScript, HTML, CSS, Bootstrap, Tailwind CSS, and jQuery. Focused on building responsive, user-friendly applications. Experienced in API integration, performance optimization, and interactive UI development. Passionate about modern web technologies and problem-solving, delivering scalable, high-quality solutions.
+    </div>
   </div>
 </body>
+
 </html>
